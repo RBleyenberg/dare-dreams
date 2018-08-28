@@ -8,7 +8,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../../environments/environment';
 import { appMetaReducers, appReducer } from './app.reducer';
 import { CustomRouterStateSerializer } from './shared/router.state';
-import { ArticleEffects } from './articles';
+import { ArticleEffects } from './articles/article.effect';
 
 @NgModule({
   imports: [
