@@ -37,10 +37,8 @@ export class ArticleEffects {
     catchError(err => of(new AddArticleFail()))
   );
 
-  @Effect({
-    dispatch: false
-  })
-  addSuccess: Observable<Action> = this.actions$.pipe(
+  @Effect({dispatch: false})
+  AddArticleSuccess: Observable<Action> = this.actions$.pipe(
     ofType<AddArticleSuccess>(ArticleActionTypes.AddArticleSuccess),
     tap(() => this.router.navigate(['articles']))
   );
@@ -76,6 +74,12 @@ export class ArticleEffects {
     switchMap(([action, article]) => this.service.save(article)),
     map((article: Article) => new UpdateArticleSuccess({ article: article })),
     catchError(err => of(new UpdateArticleFail()))
+  );
+
+  @Effect({dispatch: false})
+  UpdateArticleSuccess: Observable<Action> = this.actions$.pipe(
+    ofType<AddArticleSuccess>(ArticleActionTypes.AddArticleSuccess),
+    tap(() => this.router.navigate(['articles']))
   );
 
   constructor(

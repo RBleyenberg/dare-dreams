@@ -35,6 +35,7 @@ export class ArticleFormComponent implements OnChanges, OnDestroy {
 
   private buildForm() {
     this.formGroup = this.formBuilder.group({
+      id: [],
       name: ['', Validators.required],
       price: ['', Validators.required, AppValidators.validateCurrency]
     });
