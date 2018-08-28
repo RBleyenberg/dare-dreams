@@ -8,14 +8,20 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'products',
-    loadChildren: 'app/products/products-routing.module#ProductsRoutingModule'
+    path: 'articles',
+    loadChildren: './modules/articles/articles-routing.module#ArticlesRoutingModule'
   }
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  // useHash supports github.io demo page, remove in your app
+  imports: [
+    RouterModule.forRoot(routes, {
+      useHash: false,
+      scrollPositionRestoration: 'enabled'
+    })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

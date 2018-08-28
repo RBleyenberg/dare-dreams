@@ -3,7 +3,7 @@ import {
   MatCheckboxModule, MatChipsModule,
   MatIconModule, MatInputModule,
   MatListModule, MatMenuModule, MatProgressSpinnerModule, MatRadioModule, MatSelectModule,
-  MatSidenavModule, MatSlideToggleModule, MatSnackBarModule, MatTabsModule,
+  MatSidenavModule, MatSlideToggleModule, MatSnackBarModule, MatTableModule, MatTabsModule,
   MatToolbarModule, MatTooltipModule
 } from '@angular/material';
 import {NgModule} from '@angular/core';
@@ -26,7 +26,8 @@ import {NgModule} from '@angular/core';
     MatMenuModule,
     MatTooltipModule,
     MatSnackBarModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatTableModule
   ],
   exports: [
     MatToolbarModule,
@@ -45,7 +46,8 @@ import {NgModule} from '@angular/core';
     MatMenuModule,
     MatTooltipModule,
     MatSnackBarModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatTableModule
   ],
 })
 export class MaterialModule { }

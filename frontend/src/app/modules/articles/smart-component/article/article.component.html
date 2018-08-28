@@ -1,0 +1,12 @@
+<div fxLayout="row" fxLayoutAlign="center stretch" class="article-container">
+  <div fxFlex.xs="90%" fxFlex.sm="80%" fxFlex.md="70%" fxFlex.lg="65%" fxFlex.xl="60%">
+    <h2>Article</h2>
+    <app-article-form [article]="article$ | async"
+                      (articleChange)="onArticleChange($event)"
+                      [showErrors]="showErrors"></app-article-form>
+    <div class="actions" fxLayout="row" fxLayoutAlign="end center">
+      <button mat-button color="secondary" routerLink="/articles">Cancel</button>
+      <button mat-raised-button color="primary" (click)="onSave()">Save</button>
+    </div>
+  </div>
+</div>
