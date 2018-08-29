@@ -4,36 +4,13 @@
       "id": 1,
       "name": "twilight",
       "price": 20
-    },
+    }
+  ],
+  "relations": [
     {
-      "name": "twilight4",
-      "price": "209",
-      "id": 2
-    },
-    {
+      "id": 1,
       "name": "twilight",
-      "price": 20,
-      "id": 3
-    },
-    {
-      "id": 4,
-      "name": "frd",
-      "price": "33"
-    },
-    {
-      "id": 5,
-      "name": "fd",
-      "price": "433"
-    },
-    {
-      "id": 6,
-      "name": "tryrty",
-      "price": "555"
-    },
-    {
-      "id": 7,
-      "name": "555",
-      "price": "555"
+      "price": 20
     }
   ]
 }

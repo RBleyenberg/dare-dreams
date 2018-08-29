@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'articles',
     loadChildren: 'src/app/modules/articles/articles-routing.module#ArticlesRoutingModule'
+  },
+  {
+    path: 'relations',
+    loadChildren: 'src/app/modules/relations/relations-routing.module#RelationsRoutingModule'
   }
 
 ];
