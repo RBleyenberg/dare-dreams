@@ -1,16 +1,12 @@
 <mat-card>
   <mat-card-content>
     <mat-table #table [dataSource]="articles">
-      <ng-container matColumnDef="id">
-        <mat-header-cell *matHeaderCellDef>Article ID</mat-header-cell>
-        <mat-cell *matCellDef="let article">{{article.id}}</mat-cell>
-      </ng-container>
       <ng-container matColumnDef="name">
-        <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+        <mat-header-cell *matHeaderCellDef>Naam</mat-header-cell>
         <mat-cell *matCellDef="let article">{{article.name}}</mat-cell>
       </ng-container>
       <ng-container matColumnDef="price">
-        <mat-header-cell *matHeaderCellDef>Price</mat-header-cell>
+        <mat-header-cell *matHeaderCellDef>Inkoop prijs</mat-header-cell>
         <mat-cell *matCellDef="let article">{{article.price}}</mat-cell>
       </ng-container>
       <ng-container matColumnDef="actions">
