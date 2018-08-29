@@ -12,5 +12,12 @@
       "name": "twilight",
       "price": 20
     }
+  ],
+  "relationTypes": [
+    {
+      "id": 1,
+      "name": "twilight",
+      "price": 20
+    }
   ]
 }

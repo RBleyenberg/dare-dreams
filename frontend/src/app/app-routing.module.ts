@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'relations',
     loadChildren: 'src/app/modules/relations/relations-routing.module#RelationsRoutingModule'
+  },
+  {
+    path: 'relatie-type',
+    loadChildren: 'src/app/modules/relationTypes/relationTypes-routing.module#RelationTypesRoutingModule'
   }
 
 ];

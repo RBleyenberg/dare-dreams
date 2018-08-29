@@ -10,6 +10,7 @@ import { appMetaReducers, appReducer } from './app.reducer';
 import { CustomRouterStateSerializer } from './shared/router.state';
 import { ArticleEffects } from './articles/article.effect';
 import { RelationEffects } from '@state/relations/relation.effect';
+import { RelationTypeEffects } from '@state/relationTypes/relationType.effect';
 
 @NgModule({
   imports: [
@@ -18,7 +19,7 @@ import { RelationEffects } from '@state/relations/relation.effect';
     MatSnackBarModule,
     StoreRouterConnectingModule,
     StoreModule.forRoot(appReducer, { metaReducers: appMetaReducers }),
-    EffectsModule.forRoot([ArticleEffects, RelationEffects]),
+    EffectsModule.forRoot([ArticleEffects, RelationEffects, RelationTypeEffects]),
     !environment.production ? StoreDevtoolsModule.instrument({maxAge: 15}) : []
   ],
   declarations: []
