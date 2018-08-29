@@ -2,16 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./src",
-    "paths": {
-      "@state/*": ["app/state/*"],
-      "@modules/*": ["app/modules/*"],
-      "@validators/*": ["app/validators/*"],
-      "@environments/*": ["environments/*"]
-    },
     "outDir": "./dist/out-tsc",
-    "@state/*": "src/app/state/*",
-    "@modules/*": "src/app/modules/*",
-    "@validators/*": "src/app/validators/*",
     "sourceMap": true,
     "declaration": false,
     "module": "es2015",
@@ -22,6 +13,13 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "paths": {
+      "@state/*": ["app/state/*"],
+      "@modules/*": ["app/modules/*"],
+      "@validators/*": ["app/validators/*"],
+      "@environments/*": ["environments/*"],
+      "@testing/*": ["testing/*"]
+    },
     "lib": [
       "es2017",
       "dom"
