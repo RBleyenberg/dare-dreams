@@ -1,3 +1,5 @@
 <app-layout>
-<router-outlet></router-outlet>
+  <div [@routeAnimations]="o.isActivated && o.activatedRoute.routeConfig.path">
+    <router-outlet #o="outlet"></router-outlet>
+  </div>
 </app-layout>
