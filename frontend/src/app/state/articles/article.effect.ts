@@ -78,7 +78,7 @@ export class ArticleEffects {
 
   @Effect({dispatch: false})
   UpdateArticleSuccess: Observable<Action> = this.actions$.pipe(
-    ofType<AddArticleSuccess>(ArticleActionTypes.AddArticleSuccess),
+    ofType<AddArticleSuccess>(ArticleActionTypes.UpdateArticleSuccess),
     tap(() => this.router.navigate(['articles']))
   );
 

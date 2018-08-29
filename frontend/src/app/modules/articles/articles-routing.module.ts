@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ArticlesComponent } from './smart-component/articles/articles.component';
 import { ArticlesModule } from './articles.module';
+import { ArticleComponent } from '@modules/articles/smart-component/article/article.component';
 
 
 const routes: Routes = [
@@ -11,11 +12,11 @@ const routes: Routes = [
   },
   {
     path: 'add',
-    component: ArticlesComponent
+    component: ArticleComponent
   },
   {
     path: ':id',
-    component: ArticlesComponent
+    component: ArticleComponent
   }
 ];
 
