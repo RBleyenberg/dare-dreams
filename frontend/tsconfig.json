@@ -9,6 +9,9 @@
       "@environments/*": ["environments/*"]
     },
     "outDir": "./dist/out-tsc",
+    "@state/*": "src/app/state/*",
+    "@modules/*": "src/app/modules/*",
+    "@validators/*": "src/app/validators/*",
     "sourceMap": true,
     "declaration": false,
     "module": "es2015",
