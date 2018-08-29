@@ -8,7 +8,7 @@ import { Article } from '@state/articles/article.interface';
   styleUrls: ['./articles-table.component.scss']
 })
 export class ArticlesTableComponent {
-  displayedColumns = ['id', 'name', 'price', 'actions'];
+  displayedColumns = ['name', 'price', 'actions'];
   @Input() articles: Article[];
   @Output() delete = new EventEmitter<Article>();
   @Output() edit = new EventEmitter<Article>();
