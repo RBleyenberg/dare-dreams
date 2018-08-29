@@ -7,11 +7,14 @@
     "baseUrl": "",
     "allowJs": true
   },
-  "files": [
-    "test.ts"
-  ],
-  "include": [
-    "**/*.spec.ts",
-    "**/*.d.ts"
+  "files": ["test.ts"],
+  "include": ["**/*.spec.ts", "**/*.d.ts"],
+  "exclude": [
+    "**/e2e/*.ts",
+    "**/*.e2e-spec.ts",
+    "**/*.po.ts",
+    "node_modules",
+    "tmp",
+    "jest/*.ts"
   ]
 }

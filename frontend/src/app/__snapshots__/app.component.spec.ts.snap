@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent snaps 1`] = `
+<app-root
+  animationService={[Function AnimationsService]}
+  breakpointObserver={[Function BreakpointObserver]}
+  isHandset$={[Function Observable]}
+  title={[Function String]}
+>
+  <mat-sidenav-container
+    class="sidenav-container mat-drawer-container mat-sidenav-container"
+  >
+    
+    <div
+      class="mat-drawer-backdrop ng-star-inserted"
+    />
+    <div
+      class="cdk-visually-hidden cdk-focus-trap-anchor"
+      tabindex="-1"
+    />
+    <mat-sidenav
+      class="sidenav mat-drawer mat-sidenav ng-tns-c8-1 ng-trigger ng-trigger-transform ng-tns-c6-0 mat-drawer-side mat-sidenav-fixed ng-star-inserted"
+      fixedinviewport="true"
+      ng-reflect-fixed-in-viewport="true"
+      ng-reflect-mode="side"
+      ng-reflect-opened="true"
+      role="navigation"
+      style="top:0px;bottom:0px;transform:translate3d(0, 0, 0);visibility:visible;0:top;1:bottom;2:transform;3:visibility;"
+      tabindex="-1"
+    >
+      <mat-toolbar
+        class="mat-toolbar ng-tns-c6-0 mat-primary mat-toolbar-single-row"
+        color="primary"
+        ng-reflect-color="primary"
+      >
+        Menu
+      </mat-toolbar>
+      <mat-nav-list
+        class="mat-nav-list ng-tns-c6-0"
+        role="navigation"
+      >
+        <a
+          class="mat-list-item ng-tns-c6-0"
+          href="/articles"
+          mat-list-item=""
+          ng-reflect-router-link="articles"
+          routerlink="articles"
+        >
+          <div
+            class="mat-list-item-content"
+          >
+            <div
+              class="mat-list-item-ripple mat-ripple"
+              mat-ripple=""
+              ng-reflect-disabled="false"
+              ng-reflect-trigger="http://localhost/articles"
+            />
+            <div
+              class="mat-list-text"
+            />
+            Artikelen
+          </div>
+        </a>
+        <a
+          class="mat-list-item ng-tns-c6-0"
+          href="/relations"
+          mat-list-item=""
+          ng-reflect-router-link="relations"
+          routerlink="relations"
+        >
+          <div
+            class="mat-list-item-content"
+          >
+            <div
+              class="mat-list-item-ripple mat-ripple"
+              mat-ripple=""
+              ng-reflect-disabled="false"
+              ng-reflect-trigger="http://localhost/relations"
+            />
+            <div
+              class="mat-list-text"
+            />
+            Relaties
+          </div>
+        </a>
+        <a
+          class="mat-list-item ng-tns-c6-0"
+          href="/relatie-type"
+          mat-list-item=""
+          ng-reflect-router-link="relatie-type"
+          routerlink="relatie-type"
+        >
+          <div
+            class="mat-list-item-content"
+          >
+            <div
+              class="mat-list-item-ripple mat-ripple"
+              mat-ripple=""
+              ng-reflect-disabled="false"
+              ng-reflect-trigger="http://localhost/relatie-type"
+            />
+            <div
+              class="mat-list-text"
+            />
+            Relatie type
+          </div>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <div
+      class="cdk-visually-hidden cdk-focus-trap-anchor"
+      tabindex="-1"
+    />
+    <mat-sidenav-content
+      class="mat-drawer-content mat-sidenav-content ng-tns-c6-0"
+    >
+      <mat-toolbar
+        class="mat-toolbar ng-tns-c6-0 mat-primary mat-toolbar-single-row"
+        color="primary"
+        ng-reflect-color="primary"
+      >
+        
+        <span
+          class="ng-tns-c6-0"
+        >
+          frontend
+        </span>
+      </mat-toolbar>
+      <div
+        class="ng-tns-c6-0 ng-trigger ng-trigger-routeAnimations"
+        style=""
+      >
+        <router-outlet
+          class="ng-tns-c6-0"
+        />
+      </div>
+    </mat-sidenav-content>
+    
+  </mat-sidenav-container>
+</app-root>
+`;
