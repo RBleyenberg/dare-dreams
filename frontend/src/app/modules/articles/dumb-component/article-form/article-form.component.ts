@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnChanges, OnDestroy, Output, SimpleChanges } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AppValidators } from '../../../../validators/app.validator';
-import { Article } from '../../../../state/articles/article.interface';
+import { AppValidators } from '@validators/app.validator';
+import { Article } from '@state/articles/article.interface';
 import { Subject } from 'rxjs/Subject';
 import { debounceTime, skip, takeUntil } from 'rxjs/operators';
 

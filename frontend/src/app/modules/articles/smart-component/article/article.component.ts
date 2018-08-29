@@ -4,10 +4,10 @@ import { Store, select } from '@ngrx/store';
 import { Update } from '@ngrx/entity';
 import { Observable } from 'rxjs/Observable';
 import { filter, map, switchMap, tap } from 'rxjs/operators';
-import { AppState } from '../../../../state/app.interfaces';
-import * as fromStore from '../../../../state/articles/article.selectors';
-import { Article } from '../../../../state/articles/article.interface';
-import { AddArticle, LoadArticle, UpdateArticle } from '../../../../state/articles/article.actions';
+import { AppState } from '@state/app.interfaces';
+import * as fromStore from '@state/articles/article.selectors';
+import { Article } from '@state/articles/article.interface';
+import { AddArticle, LoadArticle, UpdateArticle } from '@state/articles/article.actions';
 
 @Component({
   selector: 'app-article',

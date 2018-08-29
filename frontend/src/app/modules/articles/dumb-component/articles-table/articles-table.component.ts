@@ -1,5 +1,5 @@
 import { Component, Input, EventEmitter, Output } from '@angular/core';
-import { Article } from '../../../../state/articles/article.interface';
+import { Article } from '@state/articles/article.interface';
 
 @Component({
   selector: 'app-articles-table',
