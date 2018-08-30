@@ -5,7 +5,7 @@ import { map, switchMap } from 'rxjs/operators';
 
 import { Article } from './article.interface';
 
-@Injectable({providedIn: 'root',})
+@Injectable({providedIn: 'root' })
 export class ArticleService {
   private articlesUrl = 'http://localhost:3000/articles'; // URL to web api
   constructor(private httpClient: HttpClient) {}

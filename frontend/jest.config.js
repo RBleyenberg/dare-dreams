@@ -10,4 +10,8 @@ module.exports = {
     '@src/(.*)': '<rootDir>/src/src/$1',
     '@state/(.*)': '<rootDir>/src/app/state/$1',
   },
+  "reporters": [
+    "default",
+    ["./node_modules/jest-html-reporter", {}],
+  ]
 };

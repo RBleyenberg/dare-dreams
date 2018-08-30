@@ -1,6 +1,5 @@
 import { async, ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
 import { MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
-
 import { AppComponent } from './app.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { LayoutModule } from '@angular/cdk/layout';
