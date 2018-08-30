@@ -1,20 +1,20 @@
 import { Component, EventEmitter, Input, OnChanges, OnDestroy, Output, SimpleChanges } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AppValidators } from '@validators/app.validator';
-import { Relation } from '@state/relations/relation.interface';
+import { Valuta } from '@state/valutas/valuta.interface';
 import { Subject } from 'rxjs/Subject';
 import { debounceTime, skip, takeUntil } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-relation-form',
-  templateUrl: './relation-form.component.html',
-  styleUrls: ['./relation-form.component.scss']
+  selector: 'app-valuta-form',
+  templateUrl: './valuta-form.component.html',
+  styleUrls: ['./valuta-form.component.scss']
 })
-export class RelationFormComponent implements OnChanges, OnDestroy {
+export class ValutaFormComponent implements OnChanges, OnDestroy {
   formGroup: FormGroup;
-  @Input() relation: Relation;
+  @Input() valuta: Valuta;
   @Input() showErrors: boolean;
-  @Output() relationChange = new EventEmitter<{ relation: Relation; valid: boolean }>();
+  @Output() valutaChange = new EventEmitter<{ valuta: Valuta; valid: boolean }>();
 
   private destroyed$ = new Subject<void>();
 
@@ -23,8 +23,8 @@ export class RelationFormComponent implements OnChanges, OnDestroy {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes['relation'] && changes['relation'].currentValue) {
-      this.formGroup.patchValue(this.relation);
+    if (changes['valuta'] && changes['valuta'].currentValue) {
+      this.formGroup.patchValue(this.valuta);
     }
   }
 
@@ -41,8 +41,8 @@ export class RelationFormComponent implements OnChanges, OnDestroy {
     });
 
     this.formGroup.valueChanges.pipe(takeUntil(this.destroyed$), skip(1), debounceTime(500)).subscribe(value => {
-      this.relationChange.emit({
-        relation: value,
+      this.valutaChange.emit({
+        valuta: value,
         valid: this.formGroup.valid
       });
     });

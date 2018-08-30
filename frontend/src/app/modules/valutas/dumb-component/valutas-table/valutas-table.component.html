@@ -1,28 +1,28 @@
 <mat-card>
   <mat-card-content>
-    <mat-table #table [dataSource]="relations">
+    <mat-table #table [dataSource]="valutas">
       <ng-container matColumnDef="name">
         <mat-header-cell *matHeaderCellDef>Naam</mat-header-cell>
-        <mat-cell *matCellDef="let relation">{{relation.name}}</mat-cell>
+        <mat-cell *matCellDef="let valuta">{{valuta.name}}</mat-cell>
       </ng-container>
       <ng-container matColumnDef="price">
         <mat-header-cell *matHeaderCellDef>Inkoop prijs</mat-header-cell>
-        <mat-cell *matCellDef="let relation">{{relation.price}}</mat-cell>
+        <mat-cell *matCellDef="let valuta">{{valuta.price}}</mat-cell>
       </ng-container>
       <ng-container matColumnDef="actions">
         <mat-header-cell *matHeaderCellDef></mat-header-cell>
-        <mat-cell *matCellDef="let relation">
+        <mat-cell *matCellDef="let valuta">
           <button mat-icon-button [matMenuTriggerFor]="menu">
             <mat-icon>more_vert</mat-icon>
           </button>
           <mat-menu #menu="matMenu">
-            <button mat-menu-item (click)="onEditRelation(relation)">Edit</button>
-            <button mat-menu-item (click)="onDeleteRelation(relation)">Delete</button>
+            <button mat-menu-item (click)="onEditValuta(valuta)">Edit</button>
+            <button mat-menu-item (click)="onDeleteValuta(valuta)">Delete</button>
           </mat-menu>
         </mat-cell>
       </ng-container>
       <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-      <mat-row *matRowDef="let relation; columns: displayedColumns;"></mat-row>
+      <mat-row *matRowDef="let valuta; columns: displayedColumns;"></mat-row>
     </mat-table>
   </mat-card-content>
 </mat-card>

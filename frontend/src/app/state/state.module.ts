@@ -11,6 +11,7 @@ import { CustomRouterStateSerializer } from './shared/router.state';
 import { ArticleEffects } from './articles/article.effect';
 import { RelationEffects } from '@state/relations/relation.effect';
 import { RelationTypeEffects } from '@state/relationTypes/relationType.effect';
+import { ValutaEffects } from '@state/valutas/valuta.effect';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { RelationTypeEffects } from '@state/relationTypes/relationType.effect';
     EffectsModule.forRoot([
       ArticleEffects,
       RelationEffects,
-      RelationTypeEffects
+      RelationTypeEffects,
+      ValutaEffects,
     ]),
     !environment.production ? StoreDevtoolsModule.instrument({maxAge: 15}) : []
   ],

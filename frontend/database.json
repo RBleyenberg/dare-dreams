@@ -19,5 +19,12 @@
       "name": "twilight",
       "price": 20
     }
+  ],
+  "valutas": [
+    {
+      "id": 1,
+      "name": "twilight",
+      "price": "203"
+    }
   ]
 }

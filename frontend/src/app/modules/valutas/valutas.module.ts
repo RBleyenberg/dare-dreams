@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { RelationsComponent} from './smart-component/relations/relations.component';
+import { ValutasComponent} from './smart-component/valutas/valutas.component';
 import { MatButtonModule, MatCardModule, MatMenuModule, MatIconModule, MatInputModule, MatTableModule } from '@angular/material';
-import { RelationComponent } from './smart-component/relation/relation.component';
-import { RelationsTableComponent } from './dumb-component/relations-table/relations-table.component';
-import { RelationFormComponent } from './dumb-component/relation-form/relation-form.component';
+import { ValutaComponent } from './smart-component/valuta/valuta.component';
+import { ValutasTableComponent } from './dumb-component/valutas-table/valutas-table.component';
+import { ValutaFormComponent } from './dumb-component/valuta-form/valuta-form.component';
 
 @NgModule({
   imports: [
@@ -24,10 +24,10 @@ import { RelationFormComponent } from './dumb-component/relation-form/relation-f
     ReactiveFormsModule
   ],
   declarations: [
-    RelationComponent,
-    RelationFormComponent,
-    RelationsComponent,
-    RelationsTableComponent
+    ValutaComponent,
+    ValutaFormComponent,
+    ValutasComponent,
+    ValutasTableComponent
   ]
 })
-export class RelationsModule {}
+export class ValutasModule {}

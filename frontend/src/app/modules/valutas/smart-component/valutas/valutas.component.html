@@ -1,0 +1,11 @@
+<div fxLayout="row" fxLayoutAlign="center stretch" class="valutas-container">
+  <div fxFlex.xs="90%" fxFlex.sm="80%" fxFlex.md="70%" fxFlex.lg="65%" fxFlex.xl="60%">
+    <h2>Valutas</h2>
+    <div class="actions" fxLayout="row" fxLayoutAlign="end center">
+      <button mat-raised-button color="primary" routerLink="add">
+        <mat-icon>add</mat-icon> Add Valuta
+      </button>
+    </div>
+    <app-valutas-table [valutas]="valutas$ | async" (delete)="onDeleteValuta($event)" (edit)="onEditValuta($event)"></app-valutas-table>
+  </div>
+</div>

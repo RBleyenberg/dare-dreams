@@ -18,8 +18,11 @@ const routes: Routes = [
   {
     path: 'relatie-type',
     loadChildren: 'src/app/modules/relationTypes/relationTypes-routing.module#RelationTypesRoutingModule'
+  },
+  {
+    path: 'valutas',
+    loadChildren: 'src/app/modules/valutas/valutas-routing.module#ValutasRoutingModule'
   }
-
 ];
 
 @NgModule({
