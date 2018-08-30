@@ -19,7 +19,7 @@ export class RelationComponent implements OnInit {
 
   private relation: Relation;
   private valid: boolean;
-  private showErrors: boolean;
+  showErrors: boolean;
 
   constructor(
     private router: Router,
