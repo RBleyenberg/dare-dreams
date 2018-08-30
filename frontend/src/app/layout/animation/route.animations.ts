@@ -16,7 +16,7 @@ const STEPS_ALL: any[] = [
       [
         style({ transform: 'translateY(0%)', opacity: 1 }),
         animate(
-          '0.2s ease-in-out',
+          '0.6s ease-in-out',
           style({ transform: 'translateY(-3%)', opacity: 0 })
         ),
         style({ position: 'fixed' })
@@ -44,7 +44,7 @@ const STEPS_ALL: any[] = [
     stagger(100, [
       style({ transform: 'translateY(15%)', opacity: 0 }),
       animate(
-        '0.5s ease-in-out',
+        '0.6s ease-in-out',
         style({ transform: 'translateY(0%)', opacity: 1 })
       )
     ]),

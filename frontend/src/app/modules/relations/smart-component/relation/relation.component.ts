@@ -8,11 +8,13 @@ import { AppState } from '@state/app.interfaces';
 import * as fromStore from '@state/relations/relation.selectors';
 import { Relation } from '@state/relations/relation.interface';
 import { AddRelation, LoadRelation, UpdateRelation } from '@state/relations/relation.actions';
+import { routeAnimations } from '../../../../layout/animation/route.animations';
 
 @Component({
   selector: 'app-relation',
   templateUrl: './relation.component.html',
-  styleUrls: ['./relation.component.scss']
+  styleUrls: ['./relation.component.scss'],
+  animations: [routeAnimations]
 })
 export class RelationComponent implements OnInit {
   relation$: Observable<Relation>;

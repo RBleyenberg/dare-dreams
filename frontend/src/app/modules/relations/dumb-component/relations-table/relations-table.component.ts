@@ -8,7 +8,7 @@ import { Relation } from '@state/relations/relation.interface';
   styleUrls: ['./relations-table.component.scss']
 })
 export class RelationsTableComponent {
-  displayedColumns = ['name', 'price', 'actions'];
+  displayedColumns = ['name',  'actions'];
   @Input() relations: Relation[];
   @Output() delete = new EventEmitter<Relation>();
   @Output() edit = new EventEmitter<Relation>();

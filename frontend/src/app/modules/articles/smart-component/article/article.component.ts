@@ -8,13 +8,16 @@ import { AppState } from '@state/app.interfaces';
 import * as fromStore from '@state/articles/article.selectors';
 import { Article } from '@state/articles/article.interface';
 import { AddArticle, LoadArticle, UpdateArticle } from '@state/articles/article.actions';
+import { routeAnimations } from '../../../../layout/animation/route.animations';
 
 @Component({
   selector: 'app-article',
   templateUrl: './article.component.html',
-  styleUrls: ['./article.component.scss']
+  styleUrls: ['./article.component.scss'],
+  animations: [routeAnimations]
 })
 export class ArticleComponent implements OnInit {
+
   article$: Observable<Article>;
 
   private article: Article;

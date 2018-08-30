@@ -1,5 +1,5 @@
 <mat-card>
-  <mat-card-content>
+  <mat-card-content [ngClass]="routeAnimationsElements">
     <mat-table #table [dataSource]="articles">
       <ng-container matColumnDef="name">
         <mat-header-cell *matHeaderCellDef>Naam</mat-header-cell>
@@ -11,14 +11,12 @@
       </ng-container>
       <ng-container matColumnDef="actions">
         <mat-header-cell *matHeaderCellDef></mat-header-cell>
-        <mat-cell *matCellDef="let article">
-          <button mat-icon-button [matMenuTriggerFor]="menu">
-            <mat-icon>more_vert</mat-icon>
-          </button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item (click)="onEditArticle(article)">Edit</button>
-            <button mat-menu-item (click)="onDeleteArticle(article)">Delete</button>
-          </mat-menu>
+        <mat-cell *matCellDef="let article" fxLayout="row" fxLayoutAlign="end center">
+          <div class="button-row">
+            <button mat-button color="primary">View</button>
+            <button mat-button color="accent" (click)="onEditArticle(article)">Edit</button>
+            <button mat-button color="warn" (click)="onDeleteArticle(article)">Delete</button>
+          </div>
         </mat-cell>
       </ng-container>
       <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

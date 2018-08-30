@@ -11,14 +11,12 @@
       </ng-container>
       <ng-container matColumnDef="actions">
         <mat-header-cell *matHeaderCellDef></mat-header-cell>
-        <mat-cell *matCellDef="let valuta">
-          <button mat-icon-button [matMenuTriggerFor]="menu">
-            <mat-icon>more_vert</mat-icon>
-          </button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item (click)="onEditValuta(valuta)">Edit</button>
-            <button mat-menu-item (click)="onDeleteValuta(valuta)">Delete</button>
-          </mat-menu>
+        <mat-cell *matCellDef="let valuta" fxLayout="row" fxLayoutAlign="end center">
+          <div class="button-row">
+            <button mat-button color="primary">View</button>
+            <button mat-button color="accent" (click)="onEditValuta(valuta)">Edit</button>
+            <button mat-button color="warn" (click)="onDeleteValuta(valuta)">Delete</button>
+          </div>
         </mat-cell>
       </ng-container>
       <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

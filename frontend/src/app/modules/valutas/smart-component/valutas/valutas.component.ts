@@ -7,10 +7,12 @@ import { AppState } from '@state/app.interfaces';
 import * as fromStore from '@state/valutas/valuta.selectors';
 import { Valuta } from '@state/valutas/valuta.interface';
 import { DeleteValuta, LoadValutas, SelectValuta} from '@state/valutas/valuta.actions';
+import { routeAnimations } from '../../../../layout/animation/route.animations';
 
 @Component({
   templateUrl: './valutas.component.html',
-  styleUrls: ['./valutas.component.scss']
+  styleUrls: ['./valutas.component.scss'],
+  animations: [routeAnimations]
 })
 export class ValutasComponent implements OnInit {
   valutas$: Observable<Valuta[]>;

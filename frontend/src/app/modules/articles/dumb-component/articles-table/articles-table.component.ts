@@ -1,5 +1,6 @@
 import { Component, Input, EventEmitter, Output } from '@angular/core';
 import { Article } from '@state/articles/article.interface';
+import { ROUTE_ANIMATIONS_ELEMENTS } from '../../../../layout/animation/route.animations';
 
 
 @Component({
@@ -12,6 +13,8 @@ export class ArticlesTableComponent {
   @Input() articles: Article[];
   @Output() delete = new EventEmitter<Article>();
   @Output() edit = new EventEmitter<Article>();
+
+  routeAnimationsElements = ROUTE_ANIMATIONS_ELEMENTS;
 
   constructor() {}
 

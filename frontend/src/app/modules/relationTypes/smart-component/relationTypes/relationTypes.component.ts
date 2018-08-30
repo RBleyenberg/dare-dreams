@@ -7,10 +7,12 @@ import { AppState } from '@state/app.interfaces';
 import * as fromStore from '@state/relationTypes/relationType.selectors';
 import { RelationType } from '@state/relationTypes/relationType.interface';
 import { DeleteRelationType, LoadRelationTypes, SelectRelationType} from '@state/relationTypes/relationType.actions';
+import { routeAnimations } from '../../../../layout/animation/route.animations';
 
 @Component({
   templateUrl: './relationTypes.component.html',
-  styleUrls: ['./relationTypes.component.scss']
+  styleUrls: ['./relationTypes.component.scss'],
+  animations: [routeAnimations]
 })
 export class RelationTypesComponent implements OnInit {
   relationTypes$: Observable<RelationType[]>;

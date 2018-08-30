@@ -1,11 +1,11 @@
 <div fxLayout="row" fxLayoutAlign="center stretch" class="articles-container">
   <div fxFlex.xs="90%" fxFlex.sm="80%" fxFlex.md="70%" fxFlex.lg="65%" fxFlex.xl="60%">
     <h2>Articles</h2>
-    <div class="actions" fxLayout="row" fxLayoutAlign="end center">
+    <div class="actions" fxLayout="row" fxLayoutAlign="end center" [ngClass]="routeAnimationsElements">
       <button mat-raised-button color="primary" routerLink="add">
         <mat-icon>add</mat-icon> Add Article
       </button>
     </div>
-    <app-articles-table [articles]="articles$ | async" (delete)="onDeleteArticle($event)" (edit)="onEditArticle($event)"></app-articles-table>
+    <app-articles-table [articles]="articles$ | async" (delete)="onDeleteArticle($event)" (edit)="onEditArticle($event)" [ngClass]="routeAnimationsElements"></app-articles-table>
   </div>
 </div>

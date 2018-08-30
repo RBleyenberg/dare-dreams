@@ -9,8 +9,7 @@
   "relations": [
     {
       "id": 1,
-      "name": "twilight",
-      "price": 20
+      "name": "twilight"
     }
   ],
   "relationTypes": [

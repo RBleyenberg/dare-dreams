@@ -7,10 +7,12 @@ import { AppState } from '@state/app.interfaces';
 import * as fromStore from '@state/relations/relation.selectors';
 import { Relation } from '@state/relations/relation.interface';
 import { DeleteRelation, LoadRelations, SelectRelation} from '@state/relations/relation.actions';
+import { routeAnimations } from '../../../../layout/animation/route.animations';
 
 @Component({
   templateUrl: './relations.component.html',
-  styleUrls: ['./relations.component.scss']
+  styleUrls: ['./relations.component.scss'],
+  animations: [routeAnimations]
 })
 export class RelationsComponent implements OnInit {
   relations$: Observable<Relation[]>;
