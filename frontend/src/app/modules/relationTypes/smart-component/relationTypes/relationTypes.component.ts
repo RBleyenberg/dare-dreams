@@ -30,6 +30,6 @@ export class RelationTypesComponent implements OnInit {
 
   onEditRelationType(relationType: RelationType) {
     this.store.dispatch(new SelectRelationType({ relationType: relationType }));
-    this.router.navigate(['relationTypes', relationType.id]);
+    this.router.navigate(['relatie-type', relationType.id]);
   }
 }

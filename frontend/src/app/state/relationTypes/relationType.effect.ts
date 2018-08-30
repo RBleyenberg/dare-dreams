@@ -40,7 +40,7 @@ export class RelationTypeEffects {
   @Effect({dispatch: false})
   AddRelationTypeSuccess: Observable<Action> = this.actions$.pipe(
     ofType<AddRelationTypeSuccess>(RelationTypeActionTypes.AddRelationTypeSuccess),
-    tap(() => this.router.navigate(['relationTypes']))
+    tap(() => this.router.navigate(['relatie-type']))
   );
 
   @Effect()
@@ -79,7 +79,7 @@ export class RelationTypeEffects {
   @Effect({dispatch: false})
   UpdateRelationTypeSuccess: Observable<Action> = this.actions$.pipe(
     ofType<AddRelationTypeSuccess>(RelationTypeActionTypes.UpdateRelationTypeSuccess),
-    tap(() => this.router.navigate(['relationTypes']))
+    tap(() => this.router.navigate(['relatie-type']))
   );
 
   constructor(
