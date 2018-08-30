@@ -19,7 +19,7 @@ export class ArticleComponent implements OnInit {
 
   private article: Article;
   private valid: boolean;
-  private showErrors: boolean;
+  showErrors: boolean;
 
   constructor(
     private router: Router,
