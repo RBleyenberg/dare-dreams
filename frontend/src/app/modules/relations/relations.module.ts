@@ -28,6 +28,6 @@ import { RelationFormComponent } from './dumb-component/relation-form/relation-f
     RelationFormComponent,
     RelationsComponent,
     RelationsTableComponent
-  ]
+  ],
 })
 export class RelationsModule {}

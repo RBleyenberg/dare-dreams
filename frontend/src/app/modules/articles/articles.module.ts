@@ -28,6 +28,6 @@ import { ArticleFormComponent } from './dumb-component/article-form/article-form
     ArticleFormComponent,
     ArticlesComponent,
     ArticlesTableComponent
-  ]
+  ],
 })
 export class ArticlesModule {}

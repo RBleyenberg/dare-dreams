@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { AnimationsService } from './layout/animation/animations.service';
 import { routeAnimations } from './layout/animation/route.animations';
 import { Observable } from 'rxjs';
-import { BreakpointObserver, Breakpoints } from '../../node_modules/@angular/cdk/layout';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { map } from 'rxjs/operators';
 
 @Component({
@@ -12,6 +12,7 @@ import { map } from 'rxjs/operators';
   animations: [routeAnimations]
 })
 export class AppComponent {
+
   title = 'frontend';
 
   constructor(private breakpointObserver: BreakpointObserver, private animationService: AnimationsService) {}
