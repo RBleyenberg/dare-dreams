@@ -11,7 +11,7 @@ import {
   MatIconModule,
   MatInputModule,
   MatTableModule,
-  MatSortModule
+  MatSortModule, MatPaginatorModule
 } from '@angular/material';
 import { ArticleComponent } from './smart-component/article/article.component';
 import { ArticlesTableComponent } from './dumb-component/articles-table/articles-table.component';
@@ -30,6 +30,7 @@ import { ArticleFormComponent } from './dumb-component/article-form/article-form
     MatMenuModule,
     MatTableModule,
     MatSortModule,
+    MatPaginatorModule,
     ReactiveFormsModule
   ],
   declarations: [

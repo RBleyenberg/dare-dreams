@@ -8,7 +8,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StateModule } from '@state/state.module';
-import { MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+import { MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
@@ -29,6 +29,9 @@ import { LayoutComponent } from './layout/layout.component';
     HttpClientModule,
     MatSidenavModule,
     StateModule.forRoot(),
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
